@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Acme - Banca Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Landing Page -->
+        <div id="landing-page" class="page active">
+            <div class="landing-container">
+                <nav class="landing-nav">
+                    <div class="nav-brand">
+                        <h1>🏦 Banco Acme</h1>
+                    </div>
+                    <div class="nav-actions">
+                        <button id="landing-theme-toggle" class="btn btn-icon" title="Cambiar tema">
+                            <span id="landing-theme-icon">🌙</span>
+                        </button>
+                        <button id="go-to-login" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                </nav>
+                
+                <section class="hero-section">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Tu Banco Digital de Confianza</h1>
+                        <p class="hero-subtitle">Gestiona tu dinero de forma segura y fácil con nuestra plataforma bancaria moderna</p>
+                        <div class="hero-buttons">
+                            <button id="hero-login" class="btn btn-primary btn-large">Iniciar Sesión</button>
+                            <button id="hero-register" class="btn btn-secondary btn-large">Crear Cuenta</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-card">
+                            <div class="card-shimmer"></div>
+                            <div class="card-content">
+                                <span class="card-title">Banco Acme</span>
+                                <span class="card-subtitle">Banca Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="features-section">
+                    <div class="container">
+                        <h2 class="section-title">¿Por qué elegir Banco Acme?</h2>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">💳</div>
+                                <h3>Tarjeta de Crédito</h3>
+                                <p>Accede a tu tarjeta de crédito con límites competitivos y sin cuotas de manejo</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">🔒</div>
+                                <h3>Seguridad Garantizada</h3>
+                                <p>Protección avanzada para todas tus transacciones con tecnología de punta</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">📱</div>
+                                <h3>Banca Móvil</h3>
+                                <p>Accede a tu cuenta desde cualquier dispositivo, en cualquier momento</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">💰</div>
+                                <h3>Transacciones Rápidas</h3>
+                                <p>Transfiere dinero, paga servicios y retira efectivo de forma instantánea</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">📊</div>
+                                <h3>Reportes Detallados</h3>
+                                <p>Consulta tu extracto bancario y certificados cuando los necesites</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">🎯</div>
+                                <h3>Sin Comisiones</h3>
+                                <p>Disfruta de servicios bancarios sin costos ocultos ni sorpresas</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="stats-section">
+                    <div class="container">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">1M+</div>
+                                <div class="stat-label">Clientes Satisfechos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50K+</div>
+                                <div class="stat-label">Transacciones Diarias</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">99.9%</div>
+                                <div class="stat-label">Tiempo de Actividad</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Soporte Disponible</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="cta-section">
+                    <div class="container">
+                        <div class="cta-content">
+                            <h2>¿Listo para empezar?</h2>
+                            <p>Únete a miles de usuarios que ya confían en Banco Acme</p>
+                            <div class="cta-buttons">
+                                <button id="cta-register" class="btn btn-primary btn-large">Crear Cuenta Gratis</button>
+                                <button id="cta-login" class="btn btn-secondary btn-large">Ya tengo cuenta</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="landing-footer">
+                    <div class="container">
+                        <div class="footer-content">
+                            <div class="footer-brand">
+                                <h3>🏦 Banco Acme</h3>
+                                <p>Tu aliado financiero de confianza</p>
+                            </div>
+                            <div class="footer-links">
+                                <div class="footer-column">
+                                    <h4>Servicios</h4>
+                                    <ul>
+                                        <li>Cuenta de Ahorros</li>
+                                        <li>Tarjeta de Crédito</li>
+                                        <li>Transferencias</li>
+                                        <li>Pago de Servicios</li>
+                                    </ul>
+                                </div>
+                                <div class="footer-column">
+                                    <h4>Soporte</h4>
+                                    <ul>
+                                        <li>Centro de Ayuda</li>
+                                        <li>Contacto</li>
+                                        <li>Términos y Condiciones</li>
+                                        <li>Política de Privacidad</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>&copy; 2025 Banco Acme. Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Página de Inicio de Sesión -->
+        <div id="login-page" class="page">
+            <div class="login-container">
+                <div class="login-box">
+                    <div class="bank-logo">
+                        <h1>Banco Acme</h1>
+                        <p>Banca Online</p>
+                        <button id="login-to-landing" class="btn btn-icon btn-home" title="Volver al inicio">
+                            🏠
+                        </button>
+                    </div>
+                    
+                    <form id="login-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="login-id-type">Tipo de Identificación</label>
+                            <select id="login-id-type" name="idType" required>
+                                <option value="">Seleccione...</option>
+                                <option value="cc">Cédula de Ciudadanía</option>
+                                <option value="ce">Cédula de Extranjería</option>
+                                <option value="ti">Tarjeta de Identidad</option>
+                                <option value="pasaporte">Pasaporte</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="login-id-number">Número de Identificación</label>
+                            <input type="text" id="login-id-number" name="idNumber" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="login-password">Contraseña</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                    
+                    <div class="auth-links">
+                        <a href="#" id="register-link">Crear cuenta</a>
+                        <a href="#" id="forgot-password-link">Recordar contraseña</a>
+                    </div>
+                    
+                    <div id="login-error" class="error-message"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de Registro -->
+        <div id="register-page" class="page">
+            <div class="register-container">
+                <div class="register-box">
+                    <button id="register-to-landing" class="btn btn-icon btn-home" title="Volver al inicio">
+                        🏠
+                    </button>
+                    <h2>Crear Cuenta Bancaria</h2>
+                    
+                    <form id="register-form" class="auth-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-id-type">Tipo de Identificación</label>
+                                <select id="reg-id-type" name="idType" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="cc">Cédula de Ciudadanía</option>
+                                    <option value="ce">Cédula de Extranjería</option>
+                                    <option value="ti">Tarjeta de Identidad</option>
+                                    <option value="pasaporte">Pasaporte</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-id-number">Número de Identificación</label>
+                                <input type="text" id="reg-id-number" name="idNumber" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-first-name">Nombres</label>
+                                <input type="text" id="reg-first-name" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-last-name">Apellidos</label>
+                                <input type="text" id="reg-last-name" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-gender">Género</label>
+                                <select id="reg-gender" name="gender" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-phone">Teléfono</label>
+                                <input type="tel" id="reg-phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reg-email">Correo Electrónico</label>
+                            <input type="email" id="reg-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-address">Dirección</label>
+                                <input type="text" id="reg-address" name="address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-city">Ciudad</label>
+                                <input type="text" id="reg-city" name="city" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reg-password">Contraseña</label>
+                            <input type="password" id="reg-password" name="password" required>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" id="cancel-register" class="btn btn-secondary">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                        </div>
+                    </form>
+                    
+                    <div id="register-error" class="error-message"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensaje de éxito para registro -->
+        <div id="registration-success" class="success-message hidden">
+            <div class="message-content">
+                <h3>¡Cuenta Creada Exitosamente!</h3>
+                <p>Su cuenta ha sido creada con éxito.</p>
+                <p><strong>Número de Cuenta:</strong> <span id="new-account-number"></span></p>
+                <p><strong>Fecha de Creación:</strong> <span id="new-account-date"></span></p>
+                <button id="go-to-login" class="btn btn-primary">Ir a Inicio de Sesión</button>
+            </div>
+        </div>
+
+        <!-- Mensaje de éxito general -->
+        <div id="success-message" class="success-message hidden">
+            <div class="message-content">
+                <h3>¡Éxito!</h3>
+                <p id="success-text">Operación completada exitosamente</p>
+                <button id="close-success" class="btn btn-primary">Cerrar</button>
+            </div>
+        </div>
+
+        <!-- Página de Recuperación de Contraseña -->
+        <div id="forgot-password-page" class="page">
+            <div class="forgot-container">
+                <div class="forgot-box">
+                    <button id="forgot-to-landing" class="btn btn-icon btn-home" title="Volver al inicio">
+                        🏠
+                    </button>
+                    <h2>Recuperar Contraseña</h2>
+                    
+                    <form id="forgot-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="forgot-id-type">Tipo de Identificación</label>
+                            <select id="forgot-id-type" name="idType" required>
+                                <option value="">Seleccione...</option>
+                                <option value="cc">Cédula de Ciudadanía</option>
+                                <option value="ce">Cédula de Extranjería</option>
+                                <option value="ti">Tarjeta de Identidad</option>
+                                <option value="pasaporte">Pasaporte</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="forgot-id-number">Número de Identificación</label>
+                            <input type="text" id="forgot-id-number" name="idNumber" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="forgot-email">Correo Electrónico</label>
+                            <input type="email" id="forgot-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" id="cancel-forgot" class="btn btn-secondary">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Recuperar</button>
+                        </div>
+                    </form>
+                    
+                    <form id="new-password-form" class="auth-form hidden">
+                        <div class="form-group">
+                            <label for="new-password">Nueva Contraseña</label>
+                            <input type="password" id="new-password" name="newPassword" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-password">Confirmar Contraseña</label>
+                            <input type="password" id="confirm-password" name="confirmPassword" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
+                    </form>
+                    
+                    <div id="forgot-error" class="error-message"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div id="dashboard-page" class="page">
+            <div class="dashboard-container">
+                <header class="dashboard-header">
+                    <div class="header-content">
+                        <h1>Banco Acme</h1>
+                        <div class="user-info">
+                            <button id="theme-toggle" class="btn btn-icon" title="Cambiar tema">
+                                <span id="theme-icon">🌙</span>
+                            </button>
+                            <button id="go-to-landing" class="btn btn-secondary" title="Ir a página principal">
+                                🏠 Inicio
+                            </button>
+                            <span id="user-name">Bienvenido</span>
+                            <button id="logout-btn" class="btn btn-secondary">Cerrar Sesión</button>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="dashboard-content">
+                    <nav class="sidebar">
+                        <ul class="nav-menu">
+                            <li><a href="#" data-section="resumen" class="nav-link active">Resumen de Cuenta</a></li>
+                            <li><a href="#" data-section="tarjeta" class="nav-link">Tarjeta de Crédito</a></li>
+                            <li><a href="#" data-section="transacciones" class="nav-link">Resumen de Transacciones</a></li>
+                            <li><a href="#" data-section="consignacion" class="nav-link">Consignación Electrónica</a></li>
+                            <li><a href="#" data-section="retiro" class="nav-link">Retiro de Dinero</a></li>
+                            <li><a href="#" data-section="servicios" class="nav-link">Pago de Servicios</a></li>
+                            <li><a href="#" data-section="extracto" class="nav-link">Extracto Bancario</a></li>
+                            <li><a href="#" data-section="certificado" class="nav-link">Certificado Bancario</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <main class="main-content">
+                        <!-- Resumen de Cuenta -->
+                        <div id="resumen-section" class="section active">
+                            <div class="account-summary">
+                                <div class="account-card">
+                                    <h3>Resumen de Cuenta</h3>
+                                    <div class="account-info">
+                                        <div class="info-item">
+                                            <span class="label">Número de Cuenta:</span>
+                                            <span id="account-number" class="value">-</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="label">Saldo Actual:</span>
+                                            <span id="account-balance" class="value balance">$0</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="label">Fecha de Creación:</span>
+                                            <span id="account-created" class="value">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta de Crédito -->
+                        <div id="tarjeta-section" class="section">
+                            <div class="credit-card-container">
+                                <h3>Mi Tarjeta de Crédito</h3>
+                                <div class="credit-card">
+                                    <div class="card-front">
+                                        <div class="card-chip"></div>
+                                        <div class="card-number">
+                                            <span id="card-number">•••• •••• •••• ••••</span>
+                                        </div>
+                                        <div class="card-info">
+                                            <div class="card-holder">
+                                                <span class="label">TITULAR</span>
+                                                <span id="card-holder-name" class="value">NOMBRE TITULAR</span>
+                                            </div>
+                                            <div class="card-expiry">
+                                                <span class="label">VENCE</span>
+                                                <span id="card-expiry-date" class="value">12/28</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-brand">
+                                            <span class="brand-name">BANCO ACME</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="label">Límite de Crédito:</span>
+                                        <span id="credit-limit" class="value">$5,000,000</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Crédito Disponible:</span>
+                                        <span id="available-credit" class="value">$5,000,000</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Próximo Corte:</span>
+                                        <span id="next-cut-date" class="value">15/08/2025</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Pago Mínimo:</span>
+                                        <span id="minimum-payment" class="value">$0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Resumen de Transacciones -->
+                        <div id="transacciones-section" class="section">
+                            <h3>Últimas 10 Transacciones</h3>
+                            <div class="transactions-table">
+                                <table id="transactions-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Fecha</th>
+                                            <th>Referencia</th>
+                                            <th>Tipo</th>
+                                            <th>Concepto</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="transactions-body">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button id="print-transactions" class="btn btn-secondary">Imprimir Resumen</button>
+                        </div>
+                        
+                        <!-- Consignación Electrónica -->
+                        <div id="consignacion-section" class="section">
+                            <div class="operation-form">
+                                <h3>Consignación Electrónica</h3>
+                                <div class="account-info-display">
+                                    <p><strong>Cuenta:</strong> <span id="consig-account-number"></span></p>
+                                    <p><strong>Titular:</strong> <span id="consig-account-holder"></span></p>
+                                </div>
+                                <form id="consignacion-form">
+                                    <div class="form-group">
+                                        <label for="consig-amount">Cantidad a Consignar</label>
+                                        <input type="number" id="consig-amount" name="amount" min="1" step="0.01" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Consignar</button>
+                                </form>
+                                <div id="consig-error" class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Retiro de Dinero -->
+                        <div id="retiro-section" class="section">
+                            <div class="operation-form">
+                                <h3>Retiro de Dinero</h3>
+                                <div class="account-info-display">
+                                    <p><strong>Cuenta:</strong> <span id="retiro-account-number"></span></p>
+                                    <p><strong>Titular:</strong> <span id="retiro-account-holder"></span></p>
+                                </div>
+                                <form id="retiro-form">
+                                    <div class="form-group">
+                                        <label for="retiro-amount">Cantidad a Retirar</label>
+                                        <input type="number" id="retiro-amount" name="amount" min="1" step="0.01" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Retirar</button>
+                                </form>
+                                <div id="retiro-error" class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pago de Servicios -->
+                        <div id="servicios-section" class="section">
+                            <div class="operation-form">
+                                <h3>Pago de Servicios Públicos</h3>
+                                <div class="account-info-display">
+                                    <p><strong>Cuenta:</strong> <span id="servicios-account-number"></span></p>
+                                    <p><strong>Titular:</strong> <span id="servicios-account-holder"></span></p>
+                                </div>
+                                <form id="servicios-form">
+                                    <div class="form-group">
+                                        <label for="service-type">Servicio Público</label>
+                                        <select id="service-type" name="serviceType" required>
+                                            <option value="">Seleccione...</option>
+                                            <option value="energia">Energía</option>
+                                            <option value="agua">Agua</option>
+                                            <option value="gas">Gas Natural</option>
+                                            <option value="internet">Internet</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="service-reference">Referencia</label>
+                                        <input type="text" id="service-reference" name="reference" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="service-amount">Valor a Pagar</label>
+                                        <input type="number" id="service-amount" name="amount" min="1" step="0.01" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Pagar Servicio</button>
+                                </form>
+                                <div id="servicios-error" class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Extracto Bancario -->
+                        <div id="extracto-section" class="section">
+                            <div class="operation-form">
+                                <h3>Extracto Bancario</h3>
+                                <div class="account-info-display">
+                                    <p><strong>Cuenta:</strong> <span id="extracto-account-number"></span></p>
+                                    <p><strong>Titular:</strong> <span id="extracto-account-holder"></span></p>
+                                </div>
+                                <form id="extracto-form">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="extracto-year">Año</label>
+                                            <select id="extracto-year" name="year" required>
+                                                <option value="">Seleccione...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="extracto-month">Mes</label>
+                                            <select id="extracto-month" name="month" required>
+                                                <option value="">Seleccione...</option>
+                                                <option value="01">Enero</option>
+                                                <option value="02">Febrero</option>
+                                                <option value="03">Marzo</option>
+                                                <option value="04">Abril</option>
+                                                <option value="05">Mayo</option>
+                                                <option value="06">Junio</option>
+                                                <option value="07">Julio</option>
+                                                <option value="08">Agosto</option>
+                                                <option value="09">Septiembre</option>
+                                                <option value="10">Octubre</option>
+                                                <option value="11">Noviembre</option>
+                                                <option value="12">Diciembre</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Generar Extracto</button>
+                                </form>
+                                <div id="extracto-error" class="error-message"></div>
+                                <div id="extracto-results" class="extracto-results hidden">
+                                    <h4>Extracto Bancario</h4>
+                                    <table id="extracto-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Fecha</th>
+                                                <th>Referencia</th>
+                                                <th>Tipo</th>
+                                                <th>Concepto</th>
+                                                <th>Valor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="extracto-body">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Certificado Bancario -->
+                        <div id="certificado-section" class="section">
+                            <div class="certificate-container">
+                                <h3>Certificado Bancario</h3>
+                                <div id="certificate" class="certificate">
+                                    <div class="certificate-header">
+                                        <h2>BANCO ACME</h2>
+                                        <p>CERTIFICADO DE CUENTA BANCARIA</p>
+                                    </div>
+                                    <div class="certificate-body">
+                                        <p>El suscrito Representante Legal del BANCO ACME certifica que:</p>
+                                        <p><strong><span id="cert-holder-name"></span></strong></p>
+                                        <p>Identificado(a) con <span id="cert-id-type"></span> número <span id="cert-id-number"></span></p>
+                                        <p>Tiene una cuenta bancaria ACTIVA en nuestra institución con el número:</p>
+                                        <p><strong><span id="cert-account-number"></span></strong></p>
+                                        <p>Cuenta creada el <span id="cert-created-date"></span></p>
+                                        <p>Se expide el presente certificado para los fines que el interesado estime convenientes.</p>
+                                        <div class="certificate-footer">
+                                            <p>Bogotá, <span id="cert-current-date"></span></p>
+                                            <div class="signature">
+                                                <p>_________________________</p>
+                                                <p>Representante Legal</p>
+                                                <p>Banco Acme</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="print-certificate" class="btn btn-secondary">Imprimir Certificado</button>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensajes de Éxito -->
+        <div id="success-message" class="success-message hidden">
+            <div class="message-content">
+                <h3>¡Operación Exitosa!</h3>
+                <p id="success-text"></p>
+                <button id="close-success" class="btn btn-primary">Cerrar</button>
+            </div>
+        </div>
+
+        <!-- Registro Exitoso -->
+        <div id="registration-success" class="success-message hidden">
+            <div class="message-content">
+                <h3>¡Cuenta Creada Exitosamente!</h3>
+                <p>Su cuenta bancaria ha sido creada con éxito.</p>
+                <p><strong>Número de Cuenta:</strong> <span id="new-account-number"></span></p>
+                <p><strong>Fecha de Creación:</strong> <span id="new-account-date"></span></p>
+                <button id="go-to-login" class="btn btn-primary">Ir a Iniciar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
